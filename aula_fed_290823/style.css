@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+} img {
+    width: 100%;
+} .container-grid {
+    /* transformando em grid */
+    display: grid;
+    /* declarar quantidade de colunas */
+    /* grid-template-columns: 100px 100px; */
+
+    /* mesma coisa com o repeat */
+    /* grid-template-columns: repeat(4, 20%); */
+
+    /* utilidade de medida ifracionadada 
+    aqui vai (fracionar) em duas partes iguais */
+    /* grid-template-columns: repeat(5, 1fr); */
+
+    /* colocando o tamanho em minmax */
+    /* tamanho min 150 */
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+
+    /* usando o auto-fit */
+    grid-template-columns: repeat(3, 125px);
+    justify-content: center;
+}
